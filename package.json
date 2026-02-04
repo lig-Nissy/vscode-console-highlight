@@ -1,0 +1,48 @@
+{
+  "name": "console-highlight",
+  "displayName": "Console Log Highlight",
+  "description": "Highlights console.log statements in your code",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.108.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Console Log Highlight",
+      "properties": {
+        "consoleHighlight.backgroundColor": {
+          "type": "string",
+          "default": "rgba(255, 255, 0, 0.3)",
+          "description": "Background color for console.log highlights"
+        },
+        "consoleHighlight.borderColor": {
+          "type": "string",
+          "default": "rgba(255, 200, 0, 0.8)",
+          "description": "Border color for console.log highlights"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "@types/vscode": "^1.108.1",
+    "@vscode/vsce": "^3.7.1",
+    "typescript": "^5.9.3"
+  }
+}
