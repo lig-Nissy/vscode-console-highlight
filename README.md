@@ -6,6 +6,8 @@ JavaScript/TypeScriptファイル内の`console.log`などのconsole文をハイ
 
 ## 機能
 
+### ハイライト
+
 以下のconsole文を自動でハイライトします：
 
 - `console.log()`
@@ -14,11 +16,20 @@ JavaScript/TypeScriptファイル内の`console.log`などのconsole文をハイ
 - `console.info()`
 - `console.debug()`
 
+### 一括削除
+
+コマンドパレット（`Cmd+Shift+P` / `Ctrl+Shift+P`）から実行：
+
+| コマンド | 説明 |
+|---------|------|
+| `Remove All Console Statements` | 現在のファイルから一括削除 |
+| `Remove All Console Statements in Workspace` | ワークスペース全体から一括削除 |
+
 ## インストール
 
 ### VSIXから（ローカル）
 
-1. [Releases](https://github.com/YOUR_USERNAME/vscode-console-highlight/releases)から最新の`.vsix`ファイルをダウンロード
+1. [Releases](https://github.com/lig-Nissy/vscode-console-highlight/releases)から最新の`.vsix`ファイルをダウンロード
 2. VSCodeを開く
 3. `Cmd+Shift+P`（Windows: `Ctrl+Shift+P`）
 4. 「Extensions: Install from VSIX...」を選択
