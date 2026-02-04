@@ -1,5 +1,7 @@
 # Console Log Highlight
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 JavaScript/TypeScriptファイル内の`console.log`などのconsole文をハイライト表示するVSCode拡張機能です。
 
 ## 機能
@@ -14,10 +16,23 @@ JavaScript/TypeScriptファイル内の`console.log`などのconsole文をハイ
 
 ## インストール
 
-1. VSCodeを開く
-2. `Cmd+Shift+P`（Windows: `Ctrl+Shift+P`）
-3. 「Extensions: Install from VSIX...」を選択
-4. `console-highlight-1.0.0.vsix`を選択
+### VSIXから（ローカル）
+
+1. [Releases](https://github.com/YOUR_USERNAME/vscode-console-highlight/releases)から最新の`.vsix`ファイルをダウンロード
+2. VSCodeを開く
+3. `Cmd+Shift+P`（Windows: `Ctrl+Shift+P`）
+4. 「Extensions: Install from VSIX...」を選択
+5. ダウンロードした`.vsix`ファイルを選択
+
+### ソースから
+
+```bash
+git clone https://github.com/lig-Nissy/vscode-console-highlight.git
+cd vscode-console-highlight
+npm install
+npm run package
+# 生成された .vsix ファイルをVSCodeでインストール
+```
 
 ## 設定
 
@@ -60,6 +75,22 @@ npm run watch
 npm run package
 ```
 
+### デバッグ
+
+1. VSCodeでプロジェクトを開く
+2. `F5`を押してデバッグモードで起動
+3. 新しいVSCodeウィンドウが開き、拡張機能がテストできる
+
+## Contributing
+
+貢献を歓迎します！
+
+1. このリポジトリをフォーク
+2. フィーチャーブランチを作成 (`git checkout -b feature/amazing-feature`)
+3. 変更をコミット (`git commit -m 'Add some amazing feature'`)
+4. ブランチをプッシュ (`git push origin feature/amazing-feature`)
+5. Pull Requestを作成
+
 ## License
 
-ISC
+MIT

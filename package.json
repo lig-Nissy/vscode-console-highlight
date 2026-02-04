@@ -17,6 +17,16 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "commands": [
+      {
+        "command": "consoleHighlight.removeAll",
+        "title": "Remove All Console Statements"
+      },
+      {
+        "command": "consoleHighlight.removeAllInWorkspace",
+        "title": "Remove All Console Statements in Workspace"
+      }
+    ],
     "configuration": {
       "title": "Console Log Highlight",
       "properties": {
